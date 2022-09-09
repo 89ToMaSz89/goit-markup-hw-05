@@ -604,6 +604,39 @@ h2{
 
 /* ************************************************************ */
 
+            /* SECTION NO.2 - OUR JOB */
+
+.ssection-list-item{
+    position: relative;
+}
+
+.text-box{
+    margin: 0px;
+
+    width: 370px;
+    padding: 27px 0px;
+
+    position: absolute;
+    top: 224px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.text-box-applications{
+    margin: 0px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-btn-color);
+}
+
+/* ************************************************************ */
+
             /* SECTION NO.3 - OUR TEAM */
 
 .ssection-list-item:not(:first-child){
