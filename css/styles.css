@@ -111,6 +111,28 @@ h2{
     margin-right: 364px;
 }
 
+.menu-navigation-item{
+    position: relative;
+}
+
+.menu-navigation-item > a::after{
+        margin: 0px;
+        margin-top: 36px;
+
+        content: "";
+        background-color: var(--main-color);
+        padding: 2px 26.5px;
+        border-radius: 2px;
+
+        display: none;
+        position: absolute;
+}
+
+.menu-navigation-item > a:active:after,
+.menu-navigation-item > a:visited{
+        display: block;
+}
+
 .menu-navigation-item:not(:last-child){
     margin-right: 43px;
 }
