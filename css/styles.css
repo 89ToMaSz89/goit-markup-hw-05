@@ -357,7 +357,7 @@ h2{
 
     background: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(100%);
+    transform: translateY(100%);    /* TRANSFORMATION */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -373,14 +373,10 @@ h2{
     color: var(--text-btn-color);
 }
 
-.picture-card:hover .description-card,
+.picture-card:hover .description-card,      /* TRANSFORMATION */
 .project-card-item:hover .description-card{
     transform: translateY(0);
 }
-
-                /* TRANSFORMATION */
-
-
 
             /****************/
             /* END PROJECTS */
@@ -531,12 +527,20 @@ h2{
     left: 0px;
 
     background-color: var(--bg-color-modal);
+
+    transform: translateY(0);       /* TRANSFORMATION */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden{
     visibility: hidden;
     opacity: 1;
-    pointer-events: none;
+    pointer-events: auto;
+
+    transform: translateY(-100%);       /* TRANSFORMATION */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
