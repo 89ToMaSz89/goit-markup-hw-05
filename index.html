@@ -86,7 +86,9 @@
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="main-btn" type="button">Zamów usługę</button>
+          <button class="main-btn" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
 
@@ -669,9 +671,9 @@
 
     <!--WINDOW MODAL-->
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <svg class="modal-icons">
+        <svg class="modal-icons" data-modal-close>
           <use
             href="./images/icons.svg#icon-close-black-18dp-2-1"
             width="18"
@@ -682,6 +684,6 @@
         </svg>
       </div>
     </div>
-
+    <script src="./js/modal.js"></script>
   </body>
 </html>
